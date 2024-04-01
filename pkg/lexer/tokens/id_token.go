@@ -1,26 +1,31 @@
 package tokens
 
-// IdToken is a token for id of the schema
-type IdToken struct {
+// IDToken is a token for id of the schema
+// revive:disable
+type IDToken struct {
 	Type_ string
 	Value string
 }
 
-func NewIdToken(value string) *IdToken {
-	return &IdToken{
+// NewIDToken creates a new IDToken
+func NewIDToken(value string) *IDToken {
+	return &IDToken{
 		Type_: "id",
 		Value: value,
 	}
 }
 
-func (idToken *IdToken) GetType() string {
+// GetType returns the type of the token
+func (idToken *IDToken) GetType() string {
 	return idToken.Type_
 }
 
-func (idToken *IdToken) GetStringValue() string {
+// GetStringValue returns the value of the token
+func (idToken *IDToken) GetStringValue() string {
 	return idToken.Value
 }
 
-func (idToken *IdToken) GetMapValue() map[string]any {
+// GetMapValue returns the value of the token
+func (idToken *IDToken) GetMapValue() map[string]any {
 	return nil
 }

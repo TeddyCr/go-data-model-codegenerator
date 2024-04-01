@@ -1,7 +1,9 @@
+// Package tokens interface for all tokens
+// defines the methods that all tokens should implement
 package tokens
 
 
-// Token interface for all tokens
+// IToken interface for all tokens
 type IToken interface {
 	GetType() string
 	GetStringValue() string

@@ -25,7 +25,7 @@ func TestInvalidLexerTokenizer(t *testing.T) {
 func TestValidLexerTokenizer(t *testing.T) {
 
 	expected := map[string]tokens.IToken{
-		"id":   tokens.NewIdToken("https://open-metadata.org/schema/tests/testSuite.json"),
+		"id":   tokens.NewIDToken("https://open-metadata.org/schema/tests/testSuite.json"),
 		"type": tokens.NewTypeToken("object"),
 		"properties": tokens.NewPropertiesToken(
 			map[string]interface{}{
